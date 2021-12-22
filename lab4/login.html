@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Авторизація</title>
+	<link rel="stylesheet" href="css/auth-reg.css">
+</head>
+<body>
+	<header>
+		<div>
+			<a href="mainPage.php">Каталог</a>
+		</div>
+		<div id="right">
+			<a href="reg.html">Реєстрація</a> | <a href="">Вхід</a>
+		</div>
+	</header>
+	<div class="container">
+		<h1>Авторизація</h1>
+			<form action="auth.php" method="post">
+				<input type="text" class="form-control" name="login" id="login" placeholder="Логін"><br><br>
+				<input type="password" class="form-control" name="pass" id="pass" placeholder="Пароль"><br><br>
+				<button class="btn" type="submit">Авторизуватися</button>
+				<p>Не зареєстровані?
+					<a href="reg.html">Реєстрація</a>
+				</p>
+			</form>
+	</div>
+</body>
+</html>
