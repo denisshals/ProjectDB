@@ -1,6 +1,6 @@
 <?php
 	$id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
-	$spareId = filter_var($_POST['spare_id'], FILTER_SANITIZE_NUMBER_INT);
+	$spareId = filter_var($_POST['spare_id'], FILTER_SANITIZE_STRING);
 	$mysql = new mysqli('localhost', 'root', '', 'autosparestore');
 	$result = $mysql->query("SELECT * FROM `order` WHERE `id` = '$id'");
 	if($result->num_rows == 0){

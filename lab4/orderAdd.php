@@ -1,5 +1,5 @@
 <?php
-	$id = filter_var($_POST['id'], FILTER_SANITIZE_NUMBER_INT);
+	$id = filter_var($_POST['id'], FILTER_SANITIZE_STRING);
 	$mysql = new mysqli('localhost', 'root', '', 
 		'autosparestore');
 	$idArr = explode(" ", $id);
